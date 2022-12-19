@@ -9,22 +9,22 @@ export default function Services() {
         <Image src={myPicture} alt="" layout="fill" objectFit="cover" />
       </div>
       <section>
-        <div>
+        <div className="dark:text-white">
           <h3 className="py-4 text-3xl">My Services</h3>
-          <p className="py-2 leading-8 text-gray-800 text-md">
+          <p className="py-2 leading-8 text-gray-800 dark:text-white text-md">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
             magnam corporis. Quibusdam molestias illo numquam
             <span className="text-blue-600"> agencies </span>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
             <span className="text-blue-600"> aspernatur!</span>
           </p>
-          <p className="py-2 leading-8 text-gray-800 text-md">
+          <p className="py-2 leading-8 text-gray-800 text-md dark:text-white">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Cupiditate, voluptate corrupti ipsam placeat est itaque?
           </p>
         </div>
         <div className="gap-10 lg:flex">
-          <div className="p-10 my-10 text-center shadow-lg rounded-xl">
+          <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
               width={100}
@@ -41,7 +41,7 @@ export default function Services() {
             <p className="py-1 text-gray-800">TailwindCss</p>
             <p className="py-1 text-gray-800">NodeJS</p>
           </div>
-          <div className="p-10 my-10 text-center shadow-lg rounded-xl">
+          <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
               width={100}
@@ -58,7 +58,7 @@ export default function Services() {
             <p className="py-1 text-gray-800">PHP</p>
             <p className="py-1 text-gray-800">Docker</p>
           </div>
-          <div className="p-10 my-10 text-center shadow-lg rounded-xl">
+          <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
               width={100}
@@ -75,7 +75,7 @@ export default function Services() {
             <p className="py-1 text-gray-800">Kotlin</p>
             <p className="py-1 text-gray-800">NGINX</p>
           </div>
-          <div className="p-10 my-10 text-center shadow-lg rounded-xl">
+          <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
               width={100}
