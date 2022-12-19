@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Resume from "../components/Resume";
+import Services from "../components/Services";
 import SocialMedia from "../components/SocialMedia";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
           <Navbar />
           <Resume />
           <SocialMedia />
+          <Services />
         </section>
       </main>
     </>
