@@ -5,12 +5,12 @@ import creativeTeam from "../public/creativeTeam.svg";
 export default function Services() {
   return (
     <>
-      <div className="relative mx-auto mt-20 overflow-hidden rounded-full w-80 h-80 ">
+      <div className="relative mx-auto mt-20 overflow-hidden rounded-full w-80 h-80 md:h-96 md:w-96">
         <Image src={myPicture} alt="" layout="fill" objectFit="cover" />
       </div>
       <section>
         <div>
-          <h3 className="py-1 text-3xl">My Services</h3>
+          <h3 className="py-4 text-3xl">My Services</h3>
           <p className="py-2 leading-8 text-gray-800 text-md">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
             magnam corporis. Quibusdam molestias illo numquam
@@ -23,7 +23,7 @@ export default function Services() {
             Cupiditate, voluptate corrupti ipsam placeat est itaque?
           </p>
         </div>
-        <div>
+        <div className="gap-10 lg:flex">
           <div className="p-10 my-10 text-center shadow-lg rounded-xl">
             <Image
               src={creativeTeam}
