@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillLinkedin,
-  AiFillInstagram,
-  AiFillFacebook,
-} from "react-icons/ai";
 import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Resume from "../components/Resume";
+import SocialMedia from "../components/SocialMedia";
 
 export default function Home() {
   return (
@@ -18,39 +15,9 @@ export default function Home() {
       </Head>
       <main className="px-10 bg-white ">
         <section className="min-h-screen">
-          <nav className="flex justify-between py-10 mb-12">
-            <h1 className="text-xl font-burtons">Yassine EL MHERZI</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill className="text-2xl cursor-pointer" />
-              </li>
-              <li>
-                <a
-                  className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-cyan-500 to-blue-800"
-                  href="#"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="p-10 text-center">
-            <h2 className="py-2 text-5xl font-medium text-blue-700 ">
-              Yassine EL MHERZI
-            </h2>
-            <h3 className="py-2 text-2xl">Web Developer</h3>
-            <p className="py-5 leading-8 text-gray-800 text-md ">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              eveniet eaque cupiditate. Itaque recusandae culpa libero dolores
-              odio quibusdam velit.
-            </p>
-          </div>
-          <div className="flex justify-center gap-16 py-3 text-4xl text-gray-600">
-            <AiFillFacebook className="rounded-full cursor-pointer hover:text-gray-900 hover:rounded-full " />
-            <AiFillLinkedin className="rounded-full cursor-pointer hover:text-gray-900 hover:rounded-full " />
-            <AiFillInstagram className="rounded-full cursor-pointer hover:text-gray-900 hover:rounded-full " />
-          </div>
-          <div className=""></div>
+          <Navbar />
+          <Resume />
+          <SocialMedia />
         </section>
       </main>
     </>
