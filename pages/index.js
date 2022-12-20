@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
@@ -9,9 +8,6 @@ import SocialMedia from "../components/SocialMedia";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const handleDarkMode = (value) => {
-    console.log(value)
-  }
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
