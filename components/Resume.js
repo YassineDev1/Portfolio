@@ -1,7 +1,7 @@
 export default function Resume() {
   return (
     <div className="p-10 text-center">
-      <h2 className="py-2 text-5xl font-medium text-blue-700 md:text-6xl ">
+      <h2 className="max-w-xl py-2 text-4xl font-medium text-blue-700 md:text-6xl ">
         Yassine EL MHERZI
       </h2>
       <h3 className="py-2 text-2xl md:text-3xl dark:text-white">Web Developer</h3>
