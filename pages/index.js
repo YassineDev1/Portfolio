@@ -1,13 +1,16 @@
 import Head from "next/head";
-import { useState } from "react";
+import {   useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import Services from "../components/Services";
 import SocialMedia from "../components/SocialMedia";
+import { UserContext } from "../Context/UserContext";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const providerStates = useMemo(() => ({darkMode, setDarkMode}), [darkMode, setDarkMode])
+  
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -18,11 +21,13 @@ export default function Home() {
       </Head>
       <main className="px-10 bg-white dark:bg-gray-900 md:px-20 lg:px-40 ">
         <section className="min-h-screen">
-          <Navbar changetoDarkMode={darkMode => setDarkMode(!darkMode)} darkMode={darkMode} />
-          <Resume />
-          <SocialMedia />
-          <Services />
-          <Projects />
+          <UserContext.Provider value={providerStates}>
+            <Navbar  />
+            <Resume />
+            <SocialMedia />
+            <Services />
+            <Projects />
+          </UserContext.Provider>
         </section>
       </main>
     </div>

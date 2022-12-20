@@ -28,6 +28,7 @@ export default function Services() {
             <Image
               src={creativeTeam}
               alt=""
+              layout=""
               width={100}
               height={100}
               className="mx-auto"
@@ -46,6 +47,7 @@ export default function Services() {
             <Image
               src={creativeTeam}
               alt=""
+              layout=""
               width={100}
               height={100}
               className="mx-auto"
@@ -64,6 +66,7 @@ export default function Services() {
             <Image
               src={creativeTeam}
               alt=""
+              layout=""
               width={100}
               height={100}
               className="mx-auto"
@@ -82,6 +85,7 @@ export default function Services() {
             <Image
               src={creativeTeam}
               alt=""
+              layout=""
               width={100}
               height={100}
               className="mx-auto"

@@ -1,14 +1,19 @@
+import { useContext } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { UserContext } from "../Context/UserContext";
 
 
-export default function Navbar({ changetoDarkMode, darkMode }) {
+export default function Navbar() {
+  const {darkMode, setDarkMode} = useContext(UserContext)
   return (
     <nav className="flex justify-between py-10 mb-12">
-      <h1 className="text-xl font-burtons dark:text-gray-200">Yassine EL MHERZI</h1>
+      <h1 className="text-xl font-burtons dark:text-gray-200">
+        Yassine EL MHERZI
+      </h1>
       <ul className="flex items-center">
         <li>
           <BsFillMoonStarsFill
-            onClick={() => changetoDarkMode(darkMode)}
+            onClick={() => setDarkMode(!darkMode)}
             className="text-2xl cursor-pointer dark:text-white"
           />
         </li>
