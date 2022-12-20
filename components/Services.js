@@ -27,6 +27,7 @@ export default function Services() {
           <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
+              alt=""
               width={100}
               height={100}
               className="mx-auto"
@@ -44,6 +45,7 @@ export default function Services() {
           <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
+              alt=""
               width={100}
               height={100}
               className="mx-auto"
@@ -61,6 +63,7 @@ export default function Services() {
           <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
+              alt=""
               width={100}
               height={100}
               className="mx-auto"
@@ -78,6 +81,7 @@ export default function Services() {
           <div className="p-10 my-10 text-center shadow-lg rounded-xl dark:bg-white dark:text-gray-900">
             <Image
               src={creativeTeam}
+              alt=""
               width={100}
               height={100}
               className="mx-auto"
