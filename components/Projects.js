@@ -6,7 +6,7 @@ import ref4 from "../public/myDoctor3.PNG";
 export default function Projects() {
   return (
     <section>
-      <div className="lg:text-center">
+      <div className="text-center">
         <h3 className="py-1 text-3xl dark:text-gray-50">Portfolio</h3>
         <p className="py-2 leading-8 text-center text-gray-800 dark:text-gray-100 text-md">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
