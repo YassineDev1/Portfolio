@@ -19,6 +19,7 @@ export default function Projects() {
         <div className="flex-1 basis-1/3">
           <Image
             src={ref1}
+            alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
             height={"100%"}
@@ -28,6 +29,7 @@ export default function Projects() {
         <div className="flex-1 basis-1/3">
           <Image
             src={ref2}
+            alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
             height={"100%"}
@@ -37,6 +39,7 @@ export default function Projects() {
         <div className="flex-1 basis-1/3">
           <Image
             src={ref3}
+            alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
             height={"100%"}
@@ -46,6 +49,7 @@ export default function Projects() {
         <div className="flex-1 basis-1/3">
           <Image
             src={ref4}
+            alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
             height={"100%"}
