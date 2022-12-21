@@ -3,8 +3,6 @@ import { useContext } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { UserContext } from "../Context/UserContext";
 
-
-
 export default function Navbar({ darkModeState }) {
   const { darkMode } = useContext(UserContext);
   return (

@@ -7,8 +7,8 @@ export default function Resume() {
         options={{
           strings: "Yassine EL MHERZI",
           autoStart: true,
-          loop: false, 
-          
+          loop: false,
+
           wrapperClassName:
             "max-w-xl py-2 text-3xl font-medium text-blue-700 md:text-5xl ",
           cursor: "",
@@ -18,7 +18,6 @@ export default function Resume() {
       />
       <Typewriter
         className="py-2 text-2xl md:text-3xl dark:text-white"
-  
         options={{
           strings: ["MERN Stack Developer", "Java Developer", "PHP Developer"],
           autoStart: true,

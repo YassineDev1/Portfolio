@@ -2,7 +2,7 @@ import {
   AiFillLinkedin,
   AiFillInstagram,
   AiFillFacebook,
-  AiFillGithub
+  AiFillGithub,
 } from "react-icons/ai";
 
 export default function SocialMedia() {
