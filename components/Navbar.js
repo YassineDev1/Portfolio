@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { useContext } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { UserContext } from "../Context/UserContext";
+
 
 
 export default function Navbar({ darkModeState }) {
@@ -18,12 +20,13 @@ export default function Navbar({ darkModeState }) {
           />
         </li>
         <li>
-          <a
+          <Link
             className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-cyan-500 to-blue-800"
-            href="#"
+            href="/Contact"
+            replace
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
