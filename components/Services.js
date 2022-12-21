@@ -1,6 +1,6 @@
 import Image from "next/image";
-import myPicture from "../public/myPicture.jpeg";
-import creativeTeam from "../public/creativeTeam.svg";
+import myPicture from "/public/myPicture.jpeg";
+import creativeTeam from "/public/creativeTeam.svg";
 
 export default function Services() {
   return (
