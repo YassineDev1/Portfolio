@@ -1,8 +1,10 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Image from "next/image";
+import {useRouter} from "next/router"
 
 export default function Contact() {
+    const router = useRouter()
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -20,7 +22,10 @@ export default function Contact() {
        country: Yup.string().required("Counntry is required"), 
        terms: Yup.array().required("Terms of service must be checked")
     }),
-    onSubmit: (values) => console.log(values)
+    onSubmit: (values) => {
+        console.log(values);
+        router.push({pathname:"/success", query: values})
+    }
   });
   return (
     <main className="flex items-center justify-center h-screen bg-blue-500">
@@ -63,7 +68,7 @@ export default function Contact() {
             <div className="pb-4">
               <label
                 className={`block pb-2 text-sm ${
-                  formik.touched.name && formik.errors.name
+                  formik.touched.email && formik.errors.email
                     ? "text-red-600"
                     : ""
                 }`}
@@ -86,7 +91,7 @@ export default function Contact() {
             <div className="pb-4">
               <label
                 className={`block pb-2 text-sm ${
-                  formik.touched.name && formik.errors.name
+                  formik.touched.country && formik.errors.country
                     ? "text-red-600"
                     : ""
                 }`}
@@ -113,7 +118,7 @@ export default function Contact() {
             <div className="pb-4">
               <label
                 className={`block pb-2 text-sm ${
-                  formik.touched.name && formik.errors.name
+                  formik.touched.terms && formik.errors.terms
                     ? "text-red-600"
                     : ""
                 }`}
