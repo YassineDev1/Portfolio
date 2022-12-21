@@ -3,8 +3,8 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { UserContext } from "../Context/UserContext";
 
 
-export default function Navbar() {
-  const {darkMode, setDarkMode} = useContext(UserContext)
+export default function Navbar({ darkModeState }) {
+  const { darkMode } = useContext(UserContext);
   return (
     <nav className="flex justify-between py-10 mb-12">
       <h1 className="text-xl font-burtons dark:text-gray-200">
@@ -13,7 +13,7 @@ export default function Navbar() {
       <ul className="flex items-center">
         <li>
           <BsFillMoonStarsFill
-            onClick={() => setDarkMode(!darkMode)}
+            onClick={() => darkModeState(!darkMode)}
             className="text-2xl cursor-pointer dark:text-white"
           />
         </li>
@@ -22,7 +22,7 @@ export default function Navbar() {
             className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-cyan-500 to-blue-800"
             href="#"
           >
-            Resume
+            Contact
           </a>
         </li>
       </ul>
