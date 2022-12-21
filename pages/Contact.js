@@ -1,10 +1,11 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Image from "next/image";
-import {useRouter} from "next/router"
+import { useRouter } from "next/router";
+import { motion as m } from "framer-motion";
 
 export default function Contact() {
-    const router = useRouter()
+  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -19,16 +20,21 @@ export default function Contact() {
       email: Yup.string()
         .email("Invalid email adress")
         .required("Email is required"),
-       country: Yup.string().required("Counntry is required"), 
-       terms: Yup.array().required("Terms of service must be checked")
+      country: Yup.string().required("Counntry is required"),
+      terms: Yup.array().required("Terms of service must be checked"),
     }),
     onSubmit: (values) => {
-        console.log(values);
-        router.push({pathname:"/success", query: values})
-    }
+      console.log(values);
+      router.push({ pathname: "/success", query: values });
+    },
   });
   return (
-    <main className="flex items-center justify-center h-screen bg-blue-500">
+    <m.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="flex items-center justify-center h-screen bg-blue-500"
+    >
       <form
         onSubmit={formik.handleSubmit}
         className="flex w-2/3 font-sans bg-white rounded-lg"
@@ -159,6 +165,6 @@ export default function Contact() {
           />
         </div>
       </form>
-    </main>
+    </m.main>
   );
 }
