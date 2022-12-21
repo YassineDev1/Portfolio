@@ -1,8 +1,11 @@
 {
+  "homepage": "https://yassinedev1.github.io/Portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,15 +15,19 @@
     "@next/font": "13.0.7",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
+    "formik": "^2.2.9",
     "framer-motion": "^7.10.2",
     "gsap": "^3.11.3",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1"
+    "react-icons": "^4.7.1",
+    "typewriter-effect": "^2.19.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   },
