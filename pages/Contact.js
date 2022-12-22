@@ -40,7 +40,7 @@ export default function Contact() {
         className="flex w-2/3 font-sans bg-white rounded-lg"
       >
         <div className="flex-1 p-20 text-gray-700">
-          <h1 className="pb-2 text-3xl text-blue-800">Let's get started</h1>
+          <h1 className="pb-2 text-3xl text-blue-800">Let s get started</h1>
           <p className="text-lg text-gray-600">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
             nisi. Ipsa eveniet autem nisi eius?
