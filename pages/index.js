@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     let currentState = window.localStorage.getItem("darkModeState");
     setDarkMode(JSON.parse(currentState));
-  }, []);
+  }, [darkMode]);
 
   return (
     <m.div
