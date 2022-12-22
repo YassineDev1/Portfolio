@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useRouter } from "next/router";
 import { motion as m } from "framer-motion";
 
@@ -158,9 +158,9 @@ export default function Contact() {
         </div>
         <div className="relative flex-1">
           <Image
-            src="/myDoctor.png"
+            src="/software.jpg"
             alt="form"
-            fill
+            layout="fill"
             className="object-cover rounded-lg"
           />
         </div>

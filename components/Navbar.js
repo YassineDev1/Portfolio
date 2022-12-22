@@ -19,7 +19,7 @@ export default function Navbar({ darkModeState }) {
         </li>
         <li>
           <Link
-            className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-cyan-500 to-blue-800"
+            className="px-4 py-2 ml-8 text-white rounded-md bg-gradient-to-r from-blue-500 to-blue-800"
             href="/Contact"
             replace
           >

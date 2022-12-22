@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ref1 from "../public/myDoctor.PNG";
 import ref2 from "../public/myDoctor1.PNG";
 import ref3 from "../public/myDoctor2.PNG";

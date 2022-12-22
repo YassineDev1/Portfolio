@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import myPicture from "../public/myPicture.jpeg";
 import creativeTeam from "../public/creativeTeam.svg";
 
