@@ -1,8 +1,8 @@
 import Image from "next/legacy/image";
-import ref1 from "../public/myDoctor.PNG";
-import ref2 from "../public/myDoctor1.PNG";
-import ref3 from "../public/myDoctor2.PNG";
-import ref4 from "../public/myDoctor3.PNG";
+// import ref1 from "../public/myDoctor.PNG";
+// import ref2 from "../public/myDoctor1.PNG";
+// import ref3 from "../public/myDoctor2.PNG";
+// import ref4 from "../public/myDoctor3.PNG";
 export default function Projects() {
   return (
     <section>
@@ -18,7 +18,7 @@ export default function Projects() {
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
         <div className="flex-1 basis-1/3">
           <Image
-            src={ref1}
+           src=""
             alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
@@ -28,7 +28,7 @@ export default function Projects() {
         </div>
         <div className="flex-1 basis-1/3">
           <Image
-            src={ref2}
+           src=""
             alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
@@ -38,7 +38,7 @@ export default function Projects() {
         </div>
         <div className="flex-1 basis-1/3">
           <Image
-            src={ref3}
+           src=""
             alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
@@ -48,7 +48,7 @@ export default function Projects() {
         </div>
         <div className="flex-1 basis-1/3">
           <Image
-            src={ref4}
+           src=""
             alt=""
             className="object-cover rounded-lg shadow-lg"
             width={"100%"}
