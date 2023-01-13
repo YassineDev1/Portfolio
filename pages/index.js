@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import SocialMedia from "../components/SocialMedia";
 import { UserContext } from "../Context/UserContext";
 import {motion as m} from "framer-motion";
+import { data } from "../data/data";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,7 +35,7 @@ export default function Home() {
       </Head>
       <main className="px-10 bg-white dark:bg-gray-900 md:px-20 lg:px-40 ">
         <section className="min-h-screen">
-          <UserContext.Provider value={"data"}>
+          <UserContext.Provider value={data}>
             <Navbar darkModeState={darkModeState} darkMode={darkMode} />
             <Resume />
             <SocialMedia />
