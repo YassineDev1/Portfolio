@@ -10,10 +10,6 @@ import {motion as m} from "framer-motion";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const providerStates = useMemo(
-    () => ({ darkMode, setDarkMode }),
-    [darkMode, setDarkMode]
-  );
   const darkModeState = (darkMode) => {
     setDarkMode(darkMode);
     window.localStorage.setItem("darkModeState", JSON.stringify(darkMode));
@@ -38,8 +34,8 @@ export default function Home() {
       </Head>
       <main className="px-10 bg-white dark:bg-gray-900 md:px-20 lg:px-40 ">
         <section className="min-h-screen">
-          <UserContext.Provider value={providerStates}>
-            <Navbar darkModeState={darkModeState} />
+          <UserContext.Provider value={"data"}>
+            <Navbar darkModeState={darkModeState} darkMode={darkMode} />
             <Resume />
             <SocialMedia />
             <Services />

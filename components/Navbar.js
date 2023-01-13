@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { useContext } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 
-export default function Navbar({ darkModeState }) {
-  const { darkMode } = useContext(UserContext);
+export default function Navbar({ darkModeState, darkMode }) {
   return (
     <m.nav
       className="flex justify-between py-10 mb-12"
