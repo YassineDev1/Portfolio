@@ -19,7 +19,7 @@ export default function Resume() {
       <Typewriter
         className="py-2 text-2xl md:text-3xl dark:text-white"
         options={{
-          strings: ["MERN Stack Developer", "Java Developer", "PHP Developer"],
+          strings: ["MERN Stack Developer", "Python Developer", "PHP Developer"],
           autoStart: true,
           loop: true,
           wrapperClassName: "py-2 text-xl md:text-2xl dark:text-white",
@@ -28,9 +28,7 @@ export default function Resume() {
         }}
       />
       <p className="max-w-xl py-5 mx-auto leading-8 text-gray-800 dark:text-gray-300 text-md md:text-xl ">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet
-        eaque cupiditate. Itaque recusandae culpa libero dolores odio quibusdam
-        velit.
+        I am Yassine El Mherzi, I am a Full Stack JavaScript Web Developer. Also I had knowledge on many technologies like : Python || PHP || ApolloGraphQL || MySQL etc. 
       </p>
     </div>
   );
