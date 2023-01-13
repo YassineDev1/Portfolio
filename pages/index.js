@@ -6,7 +6,7 @@ import Resume from "../components/Resume";
 import Services from "../components/Services";
 import SocialMedia from "../components/SocialMedia";
 import { UserContext } from "../Context/UserContext";
-import {motion as m} from "framer-motion";
+import { motion as m } from "framer-motion";
 import { data } from "../data/data";
 
 export default function Home() {

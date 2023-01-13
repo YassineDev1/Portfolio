@@ -4,13 +4,12 @@ import {
   AiFillFacebook,
   AiFillGithub,
 } from "react-icons/ai";
-import {motion as m} from "framer-motion"
+import { motion as m } from "framer-motion";
 
 export default function SocialMedia() {
-
   const Redirect = (url) => {
-    window.open(url, "_blank")
-  }
+    window.open(url, "_blank");
+  };
   return (
     <div className="flex justify-center gap-16 py-3 text-4xl text-gray-600">
       <m.span

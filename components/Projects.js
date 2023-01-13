@@ -16,14 +16,10 @@ export default function Projects() {
         </p>
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-        <div className="flex-1 basis-1/3">
-        </div>
-        <div className="flex-1 basis-1/3">
-        </div>
-        <div className="flex-1 basis-1/3">
-        </div>
-        <div className="flex-1 basis-1/3">
-        </div>
+        <div className="flex-1 basis-1/3"></div>
+        <div className="flex-1 basis-1/3"></div>
+        <div className="flex-1 basis-1/3"></div>
+        <div className="flex-1 basis-1/3"></div>
       </div>
     </section>
   );
