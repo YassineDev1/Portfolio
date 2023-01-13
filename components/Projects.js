@@ -17,44 +17,12 @@ export default function Projects() {
       </div>
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
         <div className="flex-1 basis-1/3">
-          <Image
-           src=""
-            alt=""
-            className="object-cover rounded-lg shadow-lg"
-            width={"100%"}
-            height={"100%"}
-            layout="responsive"
-          />
         </div>
         <div className="flex-1 basis-1/3">
-          <Image
-           src=""
-            alt=""
-            className="object-cover rounded-lg shadow-lg"
-            width={"100%"}
-            height={"100%"}
-            layout="responsive"
-          />
         </div>
         <div className="flex-1 basis-1/3">
-          <Image
-           src=""
-            alt=""
-            className="object-cover rounded-lg shadow-lg"
-            width={"100%"}
-            height={"100%"}
-            layout="responsive"
-          />
         </div>
         <div className="flex-1 basis-1/3">
-          <Image
-           src=""
-            alt=""
-            className="object-cover rounded-lg shadow-lg"
-            width={"100%"}
-            height={"100%"}
-            layout="responsive"
-          />
         </div>
       </div>
     </section>
