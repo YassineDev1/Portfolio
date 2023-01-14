@@ -8,7 +8,7 @@ const Navbar = lazy(() => import("../components/Navbar"));
 const Resume = lazy(() => import("../components/Resume"));
 const SocialMedia = lazy(() => import("../components/SocialMedia"));
 const Skills = lazy(() => import("../components/Skills"));
-const Projects = lazy(() => import("../components/Projects"));
+const About = lazy(() => import("../components/About"));
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -51,7 +51,7 @@ export default function Home() {
                 <Resume />
                 <SocialMedia />
                 <Skills />
-                <Projects />
+                <About />
               </div>
             </UserContext.Provider>
           </section>

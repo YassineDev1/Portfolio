@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect"
-export default function Projects() {
+export default function About() {
   return (
     <section id="about" className="py-12">
       <div className="text-center">
