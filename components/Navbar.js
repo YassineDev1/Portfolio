@@ -4,7 +4,7 @@ import { motion as m } from "framer-motion";
 
 export default function Navbar({ darkModeState, darkMode }) {
   return (
-    <m.nav className="flex justify-between py-10 mb-12">
+    <m.nav className="flex justify-between w-full px-10 py-10 mb-12 shadow-lg dark:shadow-gray-600 md:px-20 lg:px-40 ">
       <m.h1
         initial={{ x: -500 }}
         animate={{ x: 0 }}
