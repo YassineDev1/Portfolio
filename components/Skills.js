@@ -2,7 +2,7 @@ import Image from "next/legacy/image";
 import myPicture from "../public/myPicture.jpeg";
 import ServicesCards from "./ServicesCards";
 
-export default function Services() {
+export default function Skills() {
   return (
     <>
       <div className="relative mx-auto mt-20 overflow-hidden rounded-full w-80 h-80 md:h-96 md:w-96">

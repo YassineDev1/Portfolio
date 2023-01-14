@@ -3,11 +3,11 @@ import { useEffect, useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
-import Services from "../components/Services";
 import SocialMedia from "../components/SocialMedia";
 import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 import { data } from "../data/data";
+import Skills from "../components/Skills";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,14 +33,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <main className="bg-white  dark:bg-gray-900">
+      <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen">
           <UserContext.Provider value={data}>
             <Navbar darkModeState={darkModeState} darkMode={darkMode} />
             <div className="px-10 md:px-20 lg:px-40">
               <Resume />
               <SocialMedia />
-              <Services />
+              <Skills />
               <Projects />
             </div>
           </UserContext.Provider>
