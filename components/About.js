@@ -2,9 +2,9 @@ import Typewriter from "typewriter-effect"
 export default function About() {
   return (
     <section id="about" className="py-12">
-      <div className="text-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <h3 className="py-1 text-3xl dark:text-gray-50">About Me</h3>
-        <p className="py-2 leading-8 text-center text-gray-800 dark:text-gray-100 text-md">
+        <p className="px-0 py-2 leading-8 text-center text-gray-800 md:px-12 md:w-2/3 dark:text-gray-100 text-md">
           I have a variety of projects that I have worked on, some of which are
           available to view on this website. These projects showcase my skills,
           experience and my ability to deliver high-quality work in a timely
