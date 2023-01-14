@@ -9,18 +9,13 @@ export default function Services() {
         <Image src={myPicture} alt="" layout="fill" objectFit="cover" />
       </div>
       <section>
-        <div className="dark:text-white">
-          <h3 className="py-4 text-3xl">My Services</h3>
+        <div id="skills" className="dark:text-white">
+          <h3 className="py-4 text-3xl">My Skills</h3>
           <p className="py-2 leading-8 text-gray-800 dark:text-white text-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-            magnam corporis. Quibusdam molestias illo numquam
-            <span className="text-blue-600"> agencies </span>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-            <span className="text-blue-600"> aspernatur!</span>
-          </p>
-          <p className="py-2 leading-8 text-gray-800 text-md dark:text-white">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cupiditate, voluptate corrupti ipsam placeat est itaque?
+            I am proficient in a variety of programming languages, frameworks
+            and tools including ReactJS, JavaScript, HTML, CSS, Node.js, Redux,
+            React Router and Webpack. I am also familiar with Agile development
+            methodologies and Git for version control.
           </p>
         </div>
         <ServicesCards />
