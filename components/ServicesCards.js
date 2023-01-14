@@ -6,7 +6,6 @@ import { motion as m } from "framer-motion";
 
 const ServicesCards = () => {
   const data = useContext(UserContext);
-  console.log(data);
   return (
     <div className="gap-10 lg:flex">
       {data &&
