@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import myPicture from "../public/myPicture.jpeg";
-import ServicesCards from "./ServicesCards";
+import SkillsCards from "./SkillsCards";
 
 export default function Skills() {
   return (
@@ -18,7 +18,7 @@ export default function Skills() {
             methodologies and Git for version control.
           </p>
         </div>
-        <ServicesCards />
+        <SkillsCards />
       </section>
     </>
   );

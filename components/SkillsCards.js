@@ -4,7 +4,7 @@ import { FaReact, FaDocker, FaLaravel } from "react-icons/fa";
 import { RiVuejsFill } from "react-icons/ri";
 import { motion as m } from "framer-motion";
 
-const ServicesCards = () => {
+const SkillsCards = () => {
   const data = useContext(UserContext);
   return (
     <div className="gap-10 lg:flex">
@@ -52,4 +52,4 @@ const ServicesCards = () => {
   );
 };
 
-export default ServicesCards;
+export default SkillsCards;
