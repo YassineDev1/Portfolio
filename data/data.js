@@ -17,14 +17,14 @@ export const data = [
     id: 3,
     project: "Mobile Apps",
     technology: "Docker",
-    text: "I use ReactNative, Docker, and other to implement Desktop pages",
+    text: "I use ReactNative, Docker, and other to implement Mobile Apps",
     tools: ["ReactNative", "Kotlin", "Docker"],
   },
   {
     id: 4,
     project: "Custom software",
     technology: "Laravel",
-    text: "I use Angular, Laravel, and other to implement Desktop pages",
+    text: "I use Angular, Laravel, and other to implement Custom Software",
     tools: ["Angular", "Tailwindcss", "Laravel8"],
   },
 ];
