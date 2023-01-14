@@ -4,10 +4,10 @@ import { FaReact, FaDocker, FaLaravel } from "react-icons/fa";
 import { RiVuejsFill } from "react-icons/ri";
 import { motion as m } from "framer-motion";
 
-const SkillsCards = () => {
+const SkillsCards = ({ animation }) => {
   const data = useContext(UserContext);
   return (
-    <div className="gap-10 lg:flex">
+    <m.div animate={animation} className="flex gap-10 sm:translate-x-0">
       {data &&
         data.map((item) => {
           return (
@@ -48,7 +48,7 @@ const SkillsCards = () => {
             </m.div>
           );
         })}
-    </div>
+    </m.div>
   );
 };
 
