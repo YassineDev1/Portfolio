@@ -28,9 +28,9 @@ export default function Home() {
     let currentState = window.localStorage.getItem("darkModeState");
     if (isLoaded) setDarkMode(JSON.parse(currentState));
   }, [isLoaded]);
-  if (!isLoaded) return <h1>loading...</h1>;
+  if (!isLoaded) return <h1 className="py-20 mx-auto text-3xl font-bold text-center">loading...</h1>;
   return (
-    <Suspense fallback={<h1>loading...</h1>}>
+    <Suspense fallback={<h1 className="py-20 mx-auto text-3xl font-bold text-center">loading...</h1>}>
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
