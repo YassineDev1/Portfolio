@@ -7,7 +7,7 @@ import { motion as m } from "framer-motion";
 const SkillsCards = ({ animation }) => {
   const data = useContext(UserContext);
   return (
-    <m.div animate={animation} className="flex gap-10 sm:translate-x-0">
+    <m.div animate={animation} className="grid grid-cols-1 gap-12 md:grid-cols-4">
       {data &&
         data.map((item) => {
           return (
