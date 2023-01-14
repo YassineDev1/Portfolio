@@ -1,8 +1,3 @@
-import Image from "next/legacy/image";
-// import ref1 from "../public/myDoctor.PNG";
-// import ref2 from "../public/myDoctor1.PNG";
-// import ref3 from "../public/myDoctor2.PNG";
-// import ref4 from "../public/myDoctor3.PNG";
 export default function Projects() {
   return (
     <section>
