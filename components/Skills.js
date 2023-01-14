@@ -35,7 +35,7 @@ export default function Skills() {
       <section className="flex flex-col items-center justify-center max-w-full" ref={ref}>
         <div id="skills" className="flex flex-col items-center dark:text-white">
           <h3 className="py-4 text-3xl">My Skills</h3>
-          <p className="px-12 leading-8 text-gray-800 md:w-2/3 dark:text-white text-md">
+          <p className="px-0 leading-8 text-gray-800 md:px-12 md:w-2/3 dark:text-white text-md">
             I am proficient in a variety of programming languages, frameworks
             and tools including ReactJS, JavaScript, HTML, CSS, Node.js, Redux,
             React Router and Webpack. I am also familiar with Agile development
