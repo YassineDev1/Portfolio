@@ -8,7 +8,7 @@ import {useAnimation} from "framer-motion"
 export default function Skills() {
   const animation = useAnimation()
   const {ref, inView} = useInView({
-    threshold: 0.3
+    threshold: 0.2
   })
   useEffect(() => {
     console.log(inView);
