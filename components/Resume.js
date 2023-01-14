@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Resume() {
   return (
-    <div className="p-10 text-center ">
+    <div className="flex flex-col justify-center gap-10 text-center">
       <Typewriter
         options={{
           strings: "Yassine EL MHERZI",
@@ -10,7 +10,7 @@ export default function Resume() {
           loop: false,
 
           wrapperClassName:
-            "max-w-xl py-2 text-3xl font-medium text-blue-700 md:text-5xl ",
+            "max-w-xl py-2  text-center text-3xl font-medium text-blue-700 md:text-5xl ",
           cursor: "",
           cursorClassName:
             "max-w-xl py-2 text-3xl font-medium text-blue-700 md:text-5xl ",
