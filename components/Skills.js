@@ -11,7 +11,6 @@ export default function Skills() {
     threshold: 0.2
   })
   useEffect(() => {
-    console.log(inView);
     if(inView){
       animation.start({
           x:0,
