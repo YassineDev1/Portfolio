@@ -33,14 +33,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="" />
       </Head>
-      <main className="px-10 bg-white dark:bg-gray-900 md:px-20 lg:px-40 ">
+      <main className="bg-white  dark:bg-gray-900">
         <section className="min-h-screen">
           <UserContext.Provider value={data}>
             <Navbar darkModeState={darkModeState} darkMode={darkMode} />
-            <Resume />
-            <SocialMedia />
-            <Services />
-            <Projects />
+            <div className="px-10 md:px-20 lg:px-40">
+              <Resume />
+              <SocialMedia />
+              <Services />
+              <Projects />
+            </div>
           </UserContext.Provider>
         </section>
       </main>
