@@ -17,8 +17,14 @@ export default function Navbar({ darkModeState, darkMode }) {
         initial={{ x: 500 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex items-center"
+        className="flex items-center justify-end  md:justify-between md:w-[450px]"
       >
+        <li className="hidden md:inline dark:text-gray-300">
+          <Link href={"#about"}>About Me </Link>
+        </li>
+        <li className="hidden md:inline dark:text-gray-300">
+          <Link href={"#skills"}>Services</Link>
+        </li>
         <li>
           <BsFillMoonStarsFill
             onClick={() => darkModeState(!darkMode)}
