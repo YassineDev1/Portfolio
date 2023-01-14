@@ -32,9 +32,10 @@ export default function Resume() {
         }}
       />
       <p className="max-w-xl py-5 mx-auto leading-8 text-gray-800 dark:text-gray-300 text-md md:text-xl ">
-        I am Yassine El Mherzi, I am a Full Stack JavaScript Web Developer. Also
-        I had knowledge on many technologies like : Python || PHP ||
-        ApolloGraphQL || MySQL etc.
+        Welcome to my portfolio website! I am a highly skilled and experienced
+        ReactJS developer and full stack web developer with a proven track
+        record of delivering high-quality, scalable and user-friendly web
+        applications.
       </p>
     </div>
   );
