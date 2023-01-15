@@ -9,7 +9,7 @@ export default function Navbar({ darkModeState, darkMode }) {
         initial={{ x: -500 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-xl font-burtons dark:text-[#ccccce] dark:text-semibold"
+        className="text-xl font-burtons dark:text-[#cccccc] dark:text-semibold"
       >
         <Link href={"/"}>Yassine EL MHERZI</Link>
       </m.h1>
