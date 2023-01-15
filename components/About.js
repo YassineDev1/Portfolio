@@ -20,7 +20,7 @@ export default function About() {
       <div className="flex justify-center py-20">
         <Typewriter
           options={{
-            strings: "Comming soon !",
+            strings: "Coming soon !",
             autoStart: true,
             loop: true,
             wrapperClassName:
