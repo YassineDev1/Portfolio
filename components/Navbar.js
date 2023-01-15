@@ -11,18 +11,18 @@ export default function Navbar({ darkModeState, darkMode }) {
         transition={{ duration: 0.8 }}
         className="text-xl font-burtons dark:text-gray-200"
       >
-        Yassine EL MHERZI
+        <Link href={"/"}>Yassine EL MHERZI</Link>
       </m.h1>
       <m.ul
         initial={{ x: 500 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex items-center justify-end  md:justify-between md:w-[450px]"
+        className="flex items-center justify-end text-lg  text-center  md:justify-between md:w-[450px]"
       >
-        <li className="hidden md:inline dark:text-gray-300">
+        <li className="hidden px-2 link md:inline text-gray-900 dark:text-[#a0a0a0] dark:hover:text-[#ffffff] ">
           <Link href={"#about"}>About Me </Link>
         </li>
-        <li className="hidden md:inline dark:text-gray-300">
+        <li className="hidden px-2 link md:inline text-gray-900 dark:text-[#a0a0a0] w-[87px] dark:hover:text-[#ffffff]">
           <Link href={"#skills"}>Services</Link>
         </li>
         <li>
