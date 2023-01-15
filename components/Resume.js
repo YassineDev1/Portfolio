@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Resume() {
   return (
-    <div className="flex flex-col justify-center gap-6 text-center md:gap-10">
+    <div className="flex flex-col justify-center gap-4 text-center md:gap-10">
       <Typewriter
         options={{
           strings: "Yassine EL MHERZI",
