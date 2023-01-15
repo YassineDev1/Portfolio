@@ -3,6 +3,7 @@ import { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 import { data } from "../data/data";
+import Loading from "../components/Loading";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 const Resume = lazy(() => import("../components/Resume"));
@@ -28,9 +29,9 @@ export default function Home() {
     let currentState = window.localStorage.getItem("darkModeState");
     if (isLoaded) setDarkMode(JSON.parse(currentState));
   }, [isLoaded]);
-  if (!isLoaded) return <h1 className="py-20 mx-auto text-3xl font-bold text-center">loading...</h1>;
+  if (!isLoaded) return <Loading  loading={isLoaded}/>;
   return (
-    <Suspense fallback={<h1 className="py-20 mx-auto text-3xl font-bold text-center">loading...</h1>}>
+    <Suspense fallback={<Loading loading={isLoaded} />}>
       <m.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
