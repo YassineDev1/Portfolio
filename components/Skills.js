@@ -32,7 +32,7 @@ export default function Skills() {
       <div className="relative mx-auto mt-12 mb-28 overflow-hidden rounded-full w-[300px] h-[300px]">
         <Image src={myPicture} alt=""  layout="fill" objectFit="cover" />
       </div>
-      <section className="flex flex-col items-center justify-center max-w-full" ref={ref}>
+      <section className="flex flex-col items-center justify-center max-w-full text-center" ref={ref}>
         <div id="skills" className="flex flex-col items-center dark:text-white">
           <h3 className="py-4 text-3xl">My Skills</h3>
           <p className="px-0 leading-8 text-gray-800 md:px-12 md:w-2/3 dark:text-white text-md">
