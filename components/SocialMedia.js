@@ -11,7 +11,7 @@ export default function SocialMedia() {
     window.open(url, "_blank");
   };
   return (
-    <div className="flex justify-center gap-16 py-3 text-4xl text-gray-600">
+    <div className="flex justify-center gap-12 px-2 py-3 text-2xl text-gray-600 md:gap-20 md:text-4xl">
       <m.span
         onClick={() => Redirect("https://facebook.com/yassine.elmherzi/")}
         animate={{ rotate: 360 }}
