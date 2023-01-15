@@ -43,7 +43,7 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="" />
         </Head>
-        <main className="bg-white dark:bg-gray-900">
+        <main className="overflow-x-hidden bg-white dark:bg-gray-900">
           <section className="min-h-screen">
             <UserContext.Provider value={data}>
               <Navbar darkModeState={darkModeState} darkMode={darkMode} />
