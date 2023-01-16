@@ -4,6 +4,7 @@ import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 import { data } from "../data/data";
 import Loading from "../components/Loading";
+import Contact from "../components/Contact";
 
 const Navbar = lazy(() => import("../components/Navbar"));
 const Resume = lazy(() => import("../components/Resume"));
@@ -52,8 +53,9 @@ export default function Home() {
                 <Resume />
                 <SocialMedia />
                 <Skills />
-                <About />
               </div>
+              <About />
+              <Contact />
             </UserContext.Provider>
           </section>
         </main>
