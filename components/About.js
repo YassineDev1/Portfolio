@@ -31,7 +31,7 @@ export default function About() {
       animate={animation}
       ref={ref}
       id="about"
-      className="py-12 dark:text-gray-800 absolute left-0  bg-white w-full"
+      className="py-12 dark:text-gray-800 left-0  bg-white w-full"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <h3 className="py-1 text-3xl ">About Me</h3>
@@ -42,8 +42,8 @@ export default function About() {
           manner.
         </p>
       </div>
-      <div className="grid grid-cols-2 py-20">
-        <div className="border-r-2 border-solid  border-black">
+      <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1  py-20">
+        <div className="md:border-r-2 border-b-2 border-solid  border-black">
           <Image
             src="/WebDev.png"
             priority
