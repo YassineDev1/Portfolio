@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Suspense, lazy, useCallback, useEffect, useState } from "react";
+import { Suspense, lazy, useCallback, useEffect, useState, useContext } from "react";
 import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 import { data } from "../data/data";
@@ -13,8 +13,11 @@ const Skills = lazy(() => import("../components/Skills"));
 const About = lazy(() => import("../components/About"));
 
 export default function Home() {
+
+  
   const [darkMode, setDarkMode] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     setIsLoaded(true);
   }, []);
@@ -30,6 +33,15 @@ export default function Home() {
     let currentState = window.localStorage.getItem("darkModeState");
     if (isLoaded) setDarkMode(JSON.parse(currentState));
   }, [isLoaded]);
+
+   
+   const context = {
+     data: data,
+     darkMode: darkMode,
+     setDarkMode: darkModeState,
+   };
+
+
   if (!isLoaded) return <Loading  loading={isLoaded}/>;
   return (
     <Suspense fallback={<Loading loading={isLoaded} />}>
@@ -45,10 +57,10 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="" />
         </Head>
-        <main className="overflow-x-hidden relative bg-white dark:bg-gray-900">
+        <main className="relative overflow-x-hidden bg-white dark:bg-gray-900">
           <section className="min-h-screen">
-            <UserContext.Provider value={data}>
-              <Navbar darkModeState={darkModeState} darkMode={darkMode} />
+            <UserContext.Provider value={context}>
+              <Navbar />
               <div className="px-10 md:px-20 lg:px-40">
                 <Resume />
                 <SocialMedia />

@@ -28,3 +28,9 @@ html {
 .link:hover::after{
     width: 100%;
 }
+.custom-img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative;
+    height: unset !important;
+}

@@ -1,10 +1,10 @@
 import Image from "next/legacy/image";
 import myPicture from "../public/myPicture.jpeg";
-import SkillsCards from "./SkillsCards";
 import {useInView} from "react-intersection-observer" 
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import {useAnimation} from "framer-motion"
 
+const SkillsCards = lazy(() => import("./SkillsCards"));
 export default function Skills() {
   const animation = useAnimation()
   const {ref, inView} = useInView({

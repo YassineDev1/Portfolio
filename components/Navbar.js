@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { motion as m } from "framer-motion";
+import { useContext } from "react";
+import { UserContext } from "../Context/UserContext";
 
-export default function Navbar({ darkModeState, darkMode }) {
+export default function Navbar() {
+  const Context = useContext(UserContext)
+  const {darkMode, setDarkMode} = Context;
   return (
     <m.nav className="flex items-center justify-center w-full gap-8 px-6 py-10 mb-12 shadow-md md:gap-0 md:justify-between dark:shadow-gray-600 dark:shadow-sm md:px-20 lg:px-40 ">
       <m.h1
@@ -27,7 +31,7 @@ export default function Navbar({ darkModeState, darkMode }) {
         </li>
         <li>
           <BsFillMoonStarsFill
-            onClick={() => darkModeState(!darkMode)}
+            onClick={() => setDarkMode(!darkMode)}
             className="text-2xl cursor-pointer dark:text-white"
           />
         </li>

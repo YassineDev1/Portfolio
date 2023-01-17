@@ -1,40 +1,38 @@
-import Image from "next/image"
 const Contact = () => {
   return (
-    <section className="grid  bg-white grid-cols-1 md:grid-cols-2">
-      <div className="md:block hidden">
-        <Image
+    <section className="grid grid-cols-1 bg-white dark:bg-gray-500 md:grid-cols-2">
+      <div className="hidden lg:block">
+        <img
           src={"/FullStack.jpg"}
           alt="Full STack"
-          width={1200}
-          height={800}
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex py-4 justify-center items-center bg-gray-300">
+      <div className="flex items-center justify-center w-full md:px-10 md:py-10 py-6 px-6 dark:bg-gray-500 bg-gray-100">
         <form
           action=""
-          className="flex flex-col gap-4 md:w-[800px] w-full justify-center items-center"
+          className="flex flex-col md:gap-4 gap-2 w-full lg:w-2/3 dark:bg-gray-300 bg-gray-50 rounded-md shadow-lg md:py-8 md:px-4 px-6 py-4 justify-center items-center"
         >
           <h1 className="text-2xl font-semibold">Contact</h1>
-          <div className="md:w-[450px]">
+          <div className="w-full">
             Name:
             <input
               type="text"
-              className="border-2 w-full h-10 rounded-sm border-solid border-black"
+              className="w-full h-10 border-2 border-gray-300 focus:border-blue-300  outline-none border-solid rounded-md"
             />
           </div>
-          <div className="md:w-[450px]">
+          <div className="w-full">
             email:
             <input
               type="email"
-              className="border-2 h-10 w-full rounded-sm border-solid border-black"
+              className="w-full h-10 border-2 border-gray-300 focus:border-blue-300  outline-none border-solid rounded-md"
             />
           </div>
-          <div className="md:w-[450px]">
+          <div className="w-full">
             subject:
-            <textarea rows={8} className="border-2 w-full rounded-sm border-solid border-black" />
+            <textarea  className="w-full h-28 border-2 border-gray-300 outline-none  focus:border-blue-200 border-solid rounded-md" />
           </div>
-          <button type="submit">Send</button>
+          <button className="px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded-lg" type="submit">Send</button>
         </form>
       </div>
     </section>

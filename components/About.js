@@ -31,11 +31,11 @@ export default function About() {
       animate={animation}
       ref={ref}
       id="about"
-      className="py-12 dark:text-gray-800 left-0  bg-white w-full"
+      className="py-12 px-8 dark:text-gray-200 dark:bg-gray-600  bg-white w-full"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <h3 className="py-1 text-3xl ">About Me</h3>
-        <p className="px-0 py-2 leading-8 text-center text-gray-800 md:px-12 md:w-2/3text-md">
+        <p className="px-0 py-2 leading-8 text-center md:px-12 md:w-2/3text-md">
           I have a variety of projects that I have worked on, some of which are
           available to view on this website. These projects showcase my skills,
           experience and my ability to deliver high-quality work in a timely
@@ -50,6 +50,7 @@ export default function About() {
             width={700}
             height={700}
             alt="Web Dev"
+            className="m-auto rounded-lg "
           />
         </div>
         <div className="flex text-xl font-semibold justify-center gap-12 flex-col items-center">

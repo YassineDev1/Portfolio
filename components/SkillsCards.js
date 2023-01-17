@@ -5,7 +5,7 @@ import { RiVuejsFill } from "react-icons/ri";
 import { motion as m } from "framer-motion";
 
 const SkillsCards = ({ animation }) => {
-  const data = useContext(UserContext);
+  const {data} = useContext(UserContext);
   return (
     <m.div animate={animation} className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
       {data &&
