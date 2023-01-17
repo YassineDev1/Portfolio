@@ -26,7 +26,7 @@ export default function Skills() {
           x: "-100vw"
         })
     }
-  },[inView])
+  },[inView, animation])
   return (
     <>
       <div className="relative mx-auto mt-12 mb-28 overflow-hidden rounded-full w-[300px] h-[300px]">
