@@ -8,7 +8,7 @@ export default function Navbar() {
   const Context = useContext(UserContext)
   const {darkMode, setDarkMode} = Context;
   return (
-    <m.nav className="flex items-center justify-center w-full gap-8 px-6 py-10 mb-12 shadow-md md:gap-0 md:justify-between dark:shadow-gray-600 dark:shadow-sm md:px-20 lg:px-40 ">
+    <m.nav className="flex items-center justify-around w-full gap-8 px-6 py-10 mb-12 shadow-md md:gap-0 md:justify-between dark:shadow-gray-600 dark:shadow-sm md:px-20 lg:px-40 ">
       <m.h1
         initial={{ x: -500 }}
         animate={{ x: 0 }}
