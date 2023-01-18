@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="grid grid-cols-1 bg-white dark:bg-gray-500 md:grid-cols-2">
+    <section className="grid  bg-white dark:bg-gray-500 lg:grid-cols-2">
       <div className="hidden lg:block">
         <img
           src={"/FullStack.jpg"}
