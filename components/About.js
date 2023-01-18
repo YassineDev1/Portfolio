@@ -42,7 +42,7 @@ export default function About() {
           manner.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1  py-20">
+      <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1  md:py-20">
         <div className="md:border-r-2 md:border-b-0 border-b-2 border-solid  border-black">
           <Image
             src="/WebDev.png"
@@ -53,8 +53,8 @@ export default function About() {
             className="m-auto rounded-lg "
           />
         </div>
-        <div className="flex text-xl font-semibold justify-center gap-12 flex-col items-center">
-          <h1 className="text-4xl">Collaborations </h1>
+        <div className="flex text-base md:text-xl md:my-0 mt-8 font-medium justify-center gap-12 flex-col items-center">
+          <h1 className="md:text-4xl text-3xl">Collaborations </h1>
           <div>Front End Developer</div>
           <div>Backend Developer</div>
           <div>DevOps Engineer</div>
