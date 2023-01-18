@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Suspense, lazy, useCallback, useEffect, useState, useContext } from "react";
+import { useRouter } from "next/router";
+import { Suspense, lazy, useCallback, useEffect, useState} from "react";
 import { UserContext } from "../Context/UserContext";
 import { motion as m } from "framer-motion";
 import { data } from "../data/data";
@@ -13,13 +14,14 @@ const Skills = lazy(() => import("../components/Skills"));
 const About = lazy(() => import("../components/About"));
 
 export default function Home() {
-
+  const router = useRouter()
   
   const [darkMode, setDarkMode] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
+    router.push("/")
   }, []);
 
   const darkModeState = useCallback(
