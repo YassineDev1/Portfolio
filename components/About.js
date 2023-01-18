@@ -31,7 +31,7 @@ export default function About() {
       animate={animation}
       ref={ref}
       id="about"
-      className="py-12 px-8 dark:text-gray-200 dark:bg-gray-600  bg-white w-full"
+      className="py-12 px-8 dark:text-gray-200 dark:bg-gray-900  bg-white w-full"
     >
       <div className="flex flex-col items-center justify-center text-center">
         <h3 className="py-1 text-3xl ">About Me</h3>
@@ -43,7 +43,7 @@ export default function About() {
         </p>
       </div>
       <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1  md:py-20">
-        <div className="md:border-r-2 md:border-b-0 border-b-2 border-solid  border-black">
+        <div className="md:border-r-2 md:border-b-0 border-b-2 border-solid dark:border-gray-200  border-black">
           <Image
             src="/WebDev.png"
             priority
