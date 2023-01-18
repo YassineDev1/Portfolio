@@ -38,9 +38,10 @@ export default function Navbar() {
         <li>
           <Link
             className="px-4 py-2 ml-8 text-sm text-white rounded-md md:text-md bg-gradient-to-r from-blue-500 to-blue-800"
-            href="https://www.linkedin.com/in/yassine-elmherzi"
-            target="_blank"
-            replace
+            // href="https://www.linkedin.com/in/yassine-elmherzi"
+            href={"#contact"}
+            // target="_blank"
+            // replace
           >
             Contact
           </Link>
