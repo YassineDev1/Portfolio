@@ -53,7 +53,7 @@ export default function About() {
             className="m-auto rounded-lg "
           />
         </div>
-        <div className="flex text-base md:text-xl md:my-0 mt-8 font-medium justify-center gap-12 flex-col items-center">
+        <div className="flex text-base md:text-xl md:mt-0 mt-8 font-medium justify-center gap-12 flex-col items-center">
           <h1 className="md:text-4xl text-3xl">Collaborations </h1>
           <div>Front End Developer</div>
           <div>Backend Developer</div>
