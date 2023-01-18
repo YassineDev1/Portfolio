@@ -28,6 +28,7 @@ export default function About() {
 
   return (
     <m.section
+      drag={false}
       animate={animation}
       ref={ref}
       id="about"
@@ -45,6 +46,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1  md:py-20">
         <div className="md:border-r-2 md:border-b-0 border-b-2 py-12 border-solid dark:border-gray-200  border-black">
           <Image
+            draggable={false}
             src="/WebDev.png"
             priority
             width={700}
