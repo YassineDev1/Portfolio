@@ -8,7 +8,7 @@ const SkillsCards = lazy(() => import("./SkillsCards"));
 export default function Skills() {
   const animation = useAnimation()
   const {ref, inView} = useInView({
-    threshold: 0.2
+    threshold: 0.1
   })
   useEffect(() => {
     if(inView){
