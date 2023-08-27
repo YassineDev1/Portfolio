@@ -37,7 +37,7 @@ const SkillsCards = ({ animation }) => {
       {data &&
         data.map((category) => (
           <div className="py-4" key={category.id}>
-            <h2 className="text-xl font-semibold mb-4">{category.category}</h2>
+            <h2 className="text-xl font-semibold mb-4 dark:text-white">{category.category}</h2>
             <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
               {category.skills.map((skill, index) => {
                 const IconComponent = technologyIcons[skill.name];
