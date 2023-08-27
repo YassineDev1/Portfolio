@@ -1,30 +1,41 @@
 export const data = [
   {
     id: 1,
-    project: "Landing Pages",
-    technology: "React",
-    text: "I use React, Tailwind, and other to implement landing pages",
-    tools: ["ReactJS", "Tailwindcss", "NodeJS"],
+    category: "Web Development",
+    skills: [
+      { name: "React", description: "Building dynamic user interfaces" },
+      { name: "Vue", description: "Creating interactive web applications" },
+      {
+        name: "Angular",
+        description: "Developing robust single-page applications",
+      },
+    ],
   },
   {
     id: 2,
-    project: "Desktop Apps",
-    technology: "Vue",
-    text: "I use C++, Java, and other to implement Desktop pages",
-    tools: ["C++", "Java", "NGINX"],
+    category: "Mobile App Development",
+    skills: [
+      { name: "React Native", description: "Crafting mobile apps with React" },
+      { name: "Kotlin", description: "Developing Android applications" },
+    ],
   },
   {
     id: 3,
-    project: "Mobile Apps",
-    technology: "Docker",
-    text: "I use ReactNative, Docker, and other to implement Mobile Apps",
-    tools: ["ReactNative", "Kotlin", "Docker"],
-  },
-  {
-    id: 4,
-    project: "Custom software",
-    technology: "Laravel",
-    text: "I use Angular, Laravel, and other to implement Custom Software",
-    tools: ["Angular", "Tailwindcss", "Laravel8"],
+    category: "Custom Software Solutions",
+    skills: [
+      {
+        name: "Laravel",
+        description: "Creating feature-rich web applications",
+      },
+      { name: "Tailwind CSS", description: "Styling web projects with ease" },
+      {
+        name: "Node.js",
+        description: "Building scalable server-side applications",
+      },
+      {
+        name: "Docker",
+        description: "Containerizing applications for efficiency",
+      },
+    ],
   },
 ];
